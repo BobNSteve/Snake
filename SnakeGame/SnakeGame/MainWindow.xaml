@@ -1,0 +1,20 @@
+﻿<Window x:Name="k_" x:Class="SnakeGame.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:SnakeGame"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="400" Width="700" KeyDown="Window_KeyDown">
+
+    <Grid x:Name="MainScreen" >
+        <Grid.Background>
+            <ImageBrush ImageSource="Images/background.png"/>
+        </Grid.Background>
+        <Canvas x:Name="Screen">
+        </Canvas>
+        <TextBlock x:Name="beginTB" HorizontalAlignment="Center" Height="25" TextAlignment="Center" TextWrapping="Wrap" Text="Press SPACE To Begin!" VerticalAlignment="Center" Width="200" FontSize="18"/>
+        <TextBlock x:Name="ScoreTB" Opacity="0.50" HorizontalAlignment="Center" Height="23" TextAlignment="Center" TextWrapping="Wrap" Text="Score" VerticalAlignment="Top" Width="60" FontSize="18"/>
+    </Grid>
+
+</Window>
